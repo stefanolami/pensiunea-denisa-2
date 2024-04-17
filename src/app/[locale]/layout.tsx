@@ -2,6 +2,8 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import { unstable_setRequestLocale } from 'next-intl/server'
+import Header from '@/components/Header'
+import HeaderWrapper from '@/components/HeaderWrapper'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -28,6 +30,9 @@ export default function LocaleLayout({
 	return (
 		<html lang={locale}>
 			<body>
+				<HeaderWrapper>
+					<Header />
+				</HeaderWrapper>
 				<main>{children}</main>
 			</body>
 		</html>

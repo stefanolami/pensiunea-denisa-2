@@ -20,8 +20,6 @@ export default function LocaleSwitcherSelect({
 	const [isPending, startTransition] = useTransition()
 	const pathname = usePathname()
 	const params = useParams()
-	console.log('params', params)
-	console.log('pathname', pathname)
 
 	function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
 		const nextLocale = event.target.value

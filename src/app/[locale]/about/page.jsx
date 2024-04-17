@@ -19,10 +19,11 @@ export async function generateMetadata({ params: { locale } }) {
 export default function About({ params: { locale } }) {
 	unstable_setRequestLocale(locale)
 	const t = useTranslations('Index')
+	const heroMessage = t('hero')
 	return (
 		<>
 			<HomePage title={t('title')}>
-				<Hero hero={t('hero')} />
+				<Hero hero={heroMessage} />
 			</HomePage>
 			<LocaleSwitcher />
 			<p>about page</p>

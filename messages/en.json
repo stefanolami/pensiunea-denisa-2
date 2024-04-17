@@ -6,5 +6,13 @@
 	"LocaleSwitcher": {
 		"en": "English",
 		"ro": "Romanian"
+	},
+	"Navigation": {
+		"home": "Home",
+		"about": "About Us",
+		"prices": "Prices",
+		"deals": "Deals",
+		"gallery": "Gallery",
+		"contacts": "Contacts"
 	}
 }
