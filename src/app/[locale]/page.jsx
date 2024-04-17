@@ -4,6 +4,7 @@ import { getTranslations } from 'next-intl/server'
 import HomePage from '@/components/HomePage'
 import Hero from '@/components/Hero'
 import LocaleSwitcher from '@/components/LocaleSwitcher'
+import HomeHero from '@/components/HomeHero'
 
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
@@ -21,9 +22,7 @@ export default function Home({ params: { locale } }) {
 	const t = useTranslations('Index')
 	return (
 		<>
-			<HomePage title={t('title')}>
-				<Hero hero={t('hero')} />
-			</HomePage>
+			<HomeHero />
 			<LocaleSwitcher />
 		</>
 	)
