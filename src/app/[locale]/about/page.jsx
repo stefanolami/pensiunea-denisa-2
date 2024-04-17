@@ -16,7 +16,7 @@ export async function generateMetadata({ params: { locale } }) {
 	}
 }
 
-export default function Home({ params: { locale } }) {
+export default function About({ params: { locale } }) {
 	unstable_setRequestLocale(locale)
 	const t = useTranslations('Index')
 	return (
@@ -25,6 +25,7 @@ export default function Home({ params: { locale } }) {
 				<Hero hero={t('hero')} />
 			</HomePage>
 			<LocaleSwitcher />
+			<p>about page</p>
 		</>
 	)
 }
