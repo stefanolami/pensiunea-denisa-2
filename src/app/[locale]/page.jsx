@@ -24,6 +24,7 @@ export default function Home({ params: { locale } }) {
 		<>
 			<HomeHero />
 			<LocaleSwitcher />
+			<div className="h-96"></div>
 		</>
 	)
 }

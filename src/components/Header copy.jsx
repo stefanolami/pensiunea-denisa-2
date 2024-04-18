@@ -18,7 +18,7 @@ export default function Header() {
 	)
 } */
 
-import Navbar from './Navbar'
+import Navbar from './Header'
 import pick from 'lodash/pick'
 import { NextIntlClientProvider, useMessages } from 'next-intl'
 
