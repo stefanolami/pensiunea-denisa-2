@@ -1,9 +1,6 @@
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
-import HomePage from '@/components/HomePage'
-import Hero from '@/components/Hero'
-import LocaleSwitcher from '@/components/LocaleSwitcher'
 import HomeHero from '@/components/HomeHero'
 
 export async function generateMetadata({ params: { locale } }) {

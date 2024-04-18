@@ -1,4 +1,4 @@
-import { ImagesSlider } from '@/components/ui/ImagesSlider'
+import { ImagesSlider } from '@/components/sub/ImagesSlider'
 import { useTranslations } from 'next-intl'
 
 export default function HomeHero() {

@@ -1,11 +1,11 @@
 'use client'
 
-import { Link } from '../navigation'
+import { Link } from '../../navigation'
 import { useState } from 'react'
 import { motion, useScroll, useMotionValueEvent } from 'framer-motion'
 
-import DesktopNav from './sub/DesktopNav'
-import MobileNav from './sub/MobileNav'
+import DesktopNav from './DesktopNav'
+import MobileNav from './MobileNav'
 
 export default function Header(messages) {
 	const navTrans = messages?.messages?.Navigation
