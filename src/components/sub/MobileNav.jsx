@@ -1,12 +1,21 @@
 'use client'
 
 import { motion, MotionConfig } from 'framer-motion'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from '../../navigation'
 import MobileLocaleSwitcher from './MobileLocaleSwitcher'
 
 export default function MobileNav({ messages }) {
 	const [active, setActive] = useState(false)
+
+	useEffect(() => {
+		if (active) {
+			document.body.classList.add('overflow-y-hidden')
+		} else {
+			document.body.classList.remove('overflow-y-hidden')
+		}
+	}, [active])
+
 	return (
 		<div className="md:hidden">
 			<MotionConfig
@@ -86,17 +95,24 @@ export default function MobileNav({ messages }) {
 						animate={active ? 'open' : 'closed'}
 						variants={{
 							open: {
+								x: 0,
 								opacity: 1,
 								pointerEvents: 'auto',
 							},
 							closed: {
+								x: '100%',
 								opacity: 0,
 								pointerEvents: 'none',
 							},
 						}}
 					>
 						<nav className="flex flex-col justify-center gap-4 items-center">
-							<Link href="/about">{messages.about}</Link>
+							<Link
+								onClick={() => setActive(false)}
+								href="/about"
+							>
+								{messages.about}
+							</Link>
 							<Link href="/prices">{messages.prices}</Link>
 							<Link href="/deals">{messages.deals}</Link>
 							<Link href="/gallery">{messages.gallery}</Link>
