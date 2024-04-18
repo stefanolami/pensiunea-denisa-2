@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Map from '@/components/home/Map'
 
 export default function HomePage() {
 	return (
@@ -28,6 +29,12 @@ export default function HomePage() {
 						commodo consequat.
 					</p>
 				</div>
+			</section>
+			<section
+				id="map-section"
+				className="bg-amber-200 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
+			>
+				<Map />
 			</section>
 		</div>
 	)
