@@ -16,7 +16,7 @@ export default function MobileLocaleSwitcher() {
 	const locale = useLocale()
 
 	function changeLocale(event) {
-		const nextLocale = event.target.alt
+		const nextLocale = event.target.id
 		startTransition(() => {
 			router.replace(pathname, { locale: nextLocale })
 		})
@@ -42,6 +42,7 @@ export default function MobileLocaleSwitcher() {
 				<Image
 					onClick={changeLocale}
 					src={romaniaIcon}
+					id="ro"
 					alt="ro"
 					width="40"
 					height="40"
@@ -52,6 +53,7 @@ export default function MobileLocaleSwitcher() {
 				<Image
 					onClick={changeLocale}
 					src={ukIcon}
+					id="en"
 					alt="en"
 					width="40"
 					height="40"
