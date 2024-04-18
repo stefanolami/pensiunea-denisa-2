@@ -3,7 +3,7 @@
 import { motion, MotionConfig } from 'framer-motion'
 import { useState } from 'react'
 import { Link } from '../../navigation'
-/* import LangSwitcherMobile from './LangSwitcherMobile' */
+import MobileLocaleSwitcher from './MobileLocaleSwitcher'
 
 export default function MobileNav({ messages }) {
 	const [active, setActive] = useState(false)
@@ -102,7 +102,7 @@ export default function MobileNav({ messages }) {
 							<Link href="/gallery">{messages.gallery}</Link>
 							<Link href="/contacts">{messages.contacts}</Link>
 						</nav>
-						{/* <LangSwitcherMobile lng={lng} /> */}
+						<MobileLocaleSwitcher />
 					</motion.div>
 				</motion.div>
 			</MotionConfig>

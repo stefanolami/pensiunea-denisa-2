@@ -1,6 +1,5 @@
 import { Link } from '../../navigation'
-
-/* import LangSwitcherDesktop from '@/components/sub/LangSwitcherDesktop' */
+import DesktopLocaleSwitcher from './DesktopLocaleSwitcher'
 
 export default function DesktopNav({ messages }) {
 	return (
@@ -12,7 +11,7 @@ export default function DesktopNav({ messages }) {
 				<Link href="/gallery">{messages.gallery}</Link>
 				<Link href="/contacts">{messages.contacts}</Link>
 			</nav>
-			{/* <LangSwitcherDesktop lng={lng} /> */}
+			<DesktopLocaleSwitcher />
 		</div>
 	)
 }
