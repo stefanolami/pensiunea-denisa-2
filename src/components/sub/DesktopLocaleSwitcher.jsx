@@ -99,7 +99,6 @@ const wrapperVariants = {
 	open: {
 		scaleY: 1,
 		transition: {
-			when: 'beforeChildren',
 			staggerChildren: 0.1,
 			duration: 0.1,
 		},
@@ -107,32 +106,20 @@ const wrapperVariants = {
 	closed: {
 		scaleY: 0,
 		transition: {
-			when: 'afterChildren',
 			staggerChildren: 0.1,
 			duration: 0.1,
 		},
 	},
 }
 
-const iconVariants = {
-	open: { rotate: 180 },
-	closed: { rotate: 0 },
-}
-
 const itemVariants = {
 	open: {
 		opacity: 1,
 		y: 0,
-		transition: {
-			when: 'beforeChildren',
-		},
 	},
 	closed: {
 		opacity: 0,
 		y: -15,
-		transition: {
-			when: 'afterChildren',
-		},
 	},
 }
 

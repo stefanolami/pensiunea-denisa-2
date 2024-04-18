@@ -22,11 +22,7 @@ export default function About({ params: { locale } }) {
 	const heroMessage = t('hero')
 	return (
 		<>
-			<HomePage title={t('title')}>
-				<Hero hero={heroMessage} />
-			</HomePage>
-			<LocaleSwitcher />
-			<p>about page</p>
+			<p className="pt-44">about page</p>
 		</>
 	)
 }
