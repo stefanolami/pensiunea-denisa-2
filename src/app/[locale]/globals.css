@@ -11,3 +11,12 @@
 		@apply text-base md:text-lg;
 	}
 }
+
+.header-blur::after {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: -1;
+	mask: linear-gradient(to top, transparent, black 50%);
+	backdrop-filter: blur(6px);
+}

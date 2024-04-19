@@ -6,7 +6,7 @@ export default function HeaderWrapper() {
 	const messages = useMessages()
 
 	return (
-		<header className="">
+		<header className="relative header-blur">
 			<Header
 				messages={
 					// … and provide the relevant messages

@@ -5,11 +5,11 @@ export default function HomePage() {
 	return (
 		<div
 			id="homepage"
-			className="text-black text-center"
+			className="text-brown text-center"
 		>
 			<section
 				id="about-section"
-				className="bg-amber-100 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
+				className="bg-beige p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
 			>
 				<div className="order-3">
 					<Image
@@ -32,7 +32,7 @@ export default function HomePage() {
 			</section>
 			<section
 				id="map-section"
-				className="bg-amber-200 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
+				className="bg-beige2 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
 			>
 				<Map />
 			</section>
