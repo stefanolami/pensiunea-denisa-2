@@ -7,7 +7,7 @@ export default function HomePage() {
 			id="homepage"
 			className="text-brown text-center"
 		>
-			<section
+			{/* <section
 				id="about-section"
 				className="bg-beige p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
 			>
@@ -29,10 +29,11 @@ export default function HomePage() {
 						commodo consequat.
 					</p>
 				</div>
-			</section>
+			</section> */}
 			<section
 				id="map-section"
-				className="bg-beige2 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16"
+				className="bg-beige2 p-8"
+				/* className="bg-beige2 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16" */
 			>
 				<Map />
 			</section>

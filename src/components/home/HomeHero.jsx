@@ -1,7 +1,12 @@
 import { ImagesSlider } from '@/components/sub/ImagesSlider'
 
 export default function HomeHero() {
-	const images = ['/pic2.jpg', '/pic1.jpg', '/pic3.jpg']
+	const images = [
+		'/pensiune4.jpg',
+		'/pensiune2.jpg',
+		'/pensiune5.jpg',
+		'/pensiune3.jpg',
+	]
 	return (
 		<ImagesSlider
 			className="h-[100svh] xl:h-[100vh]"
@@ -9,7 +14,7 @@ export default function HomeHero() {
 			direction="up"
 		>
 			<div className="z-50 flex flex-col justify-center items-center">
-				<p className="font-bold text-xl md:text-6xl text-center text-white py-4">
+				<p className="font-bold text-2xl md:text-6xl text-center text-white py-4">
 					Pensiunea Denisa
 				</p>
 				{/* <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">

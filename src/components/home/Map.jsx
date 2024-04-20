@@ -40,7 +40,7 @@ export default function Map() {
 
 	return (
 		<div
-			className="w-full aspect-[4/3]"
+			className="w-full md:w-1/2 mx-auto aspect-[4/3]"
 			ref={mapRef}
 		></div>
 	)

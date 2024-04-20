@@ -70,7 +70,7 @@ export default function Header(messages) {
 			transition={{ duration: 0.3, ease: 'easeInOut' }}
 			className={cn(
 				'fixed top-0 w-full bg-transparent text-white z-50 md:px-10 xl:px-28  flex justify-between items-center h-20',
-				!changeHeader && 'header-blur'
+				!changeHeader && 'md:header-blur'
 			)}
 		>
 			<Link

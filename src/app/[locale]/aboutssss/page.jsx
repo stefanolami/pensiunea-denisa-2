@@ -2,6 +2,8 @@ import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { getTranslations } from 'next-intl/server'
 
+import HeroGeneral from '@/components/HeroGeneral'
+
 export async function generateMetadata({ params: { locale } }) {
 	const t = await getTranslations({
 		locale,
@@ -19,7 +21,8 @@ export default function About({ params: { locale } }) {
 	const heroMessage = t('hero')
 	return (
 		<>
-			<p className="pt-44">about page</p>
+			<HeroGeneral />
+			<p className="pt-44 bg-beige">about page</p>
 		</>
 	)
 }
