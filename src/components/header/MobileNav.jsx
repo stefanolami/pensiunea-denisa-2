@@ -106,7 +106,7 @@ export default function MobileNav({ messages }) {
 							},
 						}}
 					>
-						<nav className="flex flex-col justify-center gap-4 items-center">
+						<nav className="flex flex-col justify-center gap-4 items-center text-white">
 							<Link
 								onClick={() => setActive(false)}
 								href="/about"

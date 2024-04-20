@@ -44,24 +44,24 @@ export default function DesktopLocaleSwitcher() {
 						height="40"
 						className=""
 					/>
-					<Image
+					{/* <Image
 						src={open ? collapseArrow : expandArrow}
 						alt="dropdown arrow"
 						width="15"
 						height="15"
 						className=""
-					/>
+					/> */}
 				</button>
 
 				<motion.ul
 					initial={wrapperVariants.closed}
 					variants={wrapperVariants}
 					style={{ originY: 'top', translateX: '-50%' }}
-					className="flex flex-row gap-2 p-2 rounded-lg bg-transparent text-white border border-white shadow-xl absolute top-[120%] left-[50%] w-32 overflow-hidden"
+					className="flex flex-row gap-2 p-2 rounded-lg bg-beige text-white border border-beige3 shadow-xl absolute top-[120%] left-[50%] w-32 overflow-hidden"
 				>
 					<motion.li
 						variants={itemVariants}
-						className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-white text-white hover:text-black transition-colors cursor-pointer"
+						className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-beige3 hover:shadow-md text-white hover:text-black transition-colors cursor-pointer"
 					>
 						<motion.span variants={actionIconVariants}>
 							<Image
@@ -76,7 +76,7 @@ export default function DesktopLocaleSwitcher() {
 					</motion.li>
 					<motion.li
 						variants={itemVariants}
-						className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-white text-white hover:text-black transition-colors cursor-pointer"
+						className="flex items-center gap-2 w-full p-2 text-xs font-medium whitespace-nowrap rounded-md hover:bg-beige3 hover:shadow-md text-white hover:text-black transition-colors cursor-pointer"
 					>
 						<motion.span variants={actionIconVariants}>
 							<Image
