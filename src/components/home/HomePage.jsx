@@ -52,7 +52,7 @@ export default function HomePage() {
 			</div>
 			<section
 				id="rooms-section"
-				className="bg-beige2 p-8"
+				className=" p-8"
 				/* className="bg-beige2 p-8 md:p-24 md:grid md:grid-cols-2 md:gap-16" */
 			>
 				<Map />
