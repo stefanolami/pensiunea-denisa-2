@@ -4,11 +4,15 @@
 
 @layer utilities {
 	#homepage h3 {
-		@apply text-xl md:text-2xl xl:text-5xl mb-24;
+		@apply text-xl md:text-2xl xl:text-5xl;
 	}
 
 	#homepage p {
 		@apply text-base md:text-lg;
+	}
+
+	#homepage section {
+		@apply /*  max-w-[1200px] */ mx-auto;
 	}
 }
 

@@ -1,4 +1,5 @@
 import { ImagesSlider } from '@/components/sub/ImagesSlider'
+import { Link } from '@/navigation'
 
 export default function HomeHero() {
 	const images = [
@@ -14,13 +15,16 @@ export default function HomeHero() {
 			direction="up"
 		>
 			<div className="z-50 flex flex-col justify-center items-center">
-				<p className="font-bold text-2xl md:text-6xl text-center text-white py-4">
+				<h1 className="font-bold text-3xl md:text-8xl text-center text-white py-4 mt-28 md:mt-36">
 					Pensiunea Denisa
-				</p>
-				{/* <button className="px-4 py-2 backdrop-blur-sm border bg-emerald-300/10 border-emerald-500/20 text-white mx-auto text-center rounded-full relative mt-4">
-					<span>About Us...</span>
-					<div className="absolute inset-x-0  h-px -bottom-px bg-gradient-to-r w-3/4 mx-auto from-transparent via-emerald-500 to-transparent" />
-				</button> */}
+				</h1>
+				<h4 className="text-white md:text-2xl mb-20 md:mb-32">
+					BINE AȚI VENIT!
+				</h4>
+
+				<button className="block text-brown text-xs md:text-lg bg-white py-2 md:py-3 px-10 md:px-14 shadow-xl">
+					<Link href="/rooms">CAZARE</Link>
+				</button>
 			</div>
 		</ImagesSlider>
 	)
